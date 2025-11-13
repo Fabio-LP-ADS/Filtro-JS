@@ -1,0 +1,151 @@
+body {
+  /*background: var(--backgroundColor);*/
+  background: #F5DEB3;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #696969;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.img {
+  width: 300px;
+  height: 100px;
+  display: block;
+  object-fit: cover;
+}
+/*
+=============== 
+Products 
+===============
+*/
+.products {
+  width: 1120px;
+  display: grid;
+  margin: 4rem auto;
+  max-width: 1120px;
+}
+
+.filters-container h5 {
+  font-weight: 500;
+  margin: 1.5rem 0 0.5rem;
+  font-size: 0.85rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  background: #e2e8f0;
+  border-radius: 10px;
+  border-color: transparent;
+  letter-spacing: 1px;
+}
+
+.company-btn {
+  display: block;
+  margin: 0.25em 0;
+  padding: 0.25rem;
+  text-transform: capitalize;
+  background: transparent;
+  border-color: transparent;
+  letter-spacing: 1px;
+  color: #64748b;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+  font-size: 0.85rem;
+}
+.company-btn:hover {
+  color: #334155;
+}
+.product {
+  margin-bottom: 1rem;
+}
+.product-img {
+  border-radius: 10px;
+  height: 15rem;
+  max-width: 100%;
+  max-height: 100%
+}
+.product footer {
+  padding: 0.75rem 0;
+  text-align: center;
+}
+.product-name {
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: #64748b;
+}
+.product-price {
+  margin-top: 0;
+  color: #334155;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+figcaption{
+  text-align: center;   
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    grid-template-columns: 200px 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .products-container .product-img {
+    height: 10rem;
+  }
+  .products-container .product-name {
+    font-size: 0.85rem;
+  }
+  .products-container .product-price {
+    font-size: 0.85rem;
+  }
+  .product {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .products-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
